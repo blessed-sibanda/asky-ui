@@ -1,7 +1,7 @@
 <template>
   <div>
     <navbar />
-    <div class="container py-3"><router-view /></div>
+    <div class="container-lg py-3"><router-view /></div>
   </div>
 </template>
 

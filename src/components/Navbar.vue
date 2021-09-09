@@ -1,6 +1,6 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="dark">
-    <div class="container">
+  <b-navbar style="z-index: 5;" sticky toggleable="md" type="dark" variant="dark">
+    <div class="container-lg">
       <b-navbar-brand to="/">Asky</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
