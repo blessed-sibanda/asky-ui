@@ -1,13 +1,17 @@
 <template>
-  <div id="app">
-    <h1>Asky UI</h1>
+  <div>
+    <navbar />
+    <div class="container"><router-view /></div>
   </div>
 </template>
 
 <script>
+import Navbar from './components/Navbar.vue';
 export default {
   name: 'App',
-  components: {},
+  components: {
+    Navbar,
+  },
 };
 </script>
 
