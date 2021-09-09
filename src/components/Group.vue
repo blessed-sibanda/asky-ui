@@ -3,7 +3,11 @@
     <div class="card-header border-0 d-flex pb-1 pt-3 bg-light">
       <img src="../assets/group-banner.jpg" class="group-banner border" alt="" />
       <div>
-        <h6 class="my-0 py-0">{{ group.name }}</h6>
+        <h6 class="my-0 py-0">
+          <router-link :to="{ name: 'group', params: { id: group.id } }">
+            {{ group.name }}
+          </router-link>
+        </h6>
         <p class="small py-0 my-0">Engineering</p>
       </div>
     </div>

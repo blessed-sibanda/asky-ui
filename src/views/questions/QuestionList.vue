@@ -11,7 +11,7 @@
         <h6>Recommended Groups</h6>
         <div v-for="group in groups" :key="group.id">
           <div class="card mb-2 px-3 py-2">
-            <router-link to="#">
+            <router-link :to="{ name: 'group', params: { id: group.id } }">
               <strong>{{ group.name }}</strong>
             </router-link>
           </div>

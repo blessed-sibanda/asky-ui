@@ -11,9 +11,7 @@
         <h6>Popular Questions</h6>
         <div v-for="question in questions" :key="question.id">
           <div class="card mb-2 px-3 py-2">
-            <router-link
-              :to="{ name: 'questionDetail', params: { id: question.id } }"
-            >
+            <router-link :to="{ name: 'question', params: { id: question.id } }">
               <span class="fw-light">{{ question.title }}</span>
             </router-link>
           </div>

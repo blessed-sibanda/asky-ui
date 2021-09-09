@@ -7,6 +7,7 @@ import GroupList from '../views/groups/GroupList.vue';
 import Profile from '../views/users/Profile.vue';
 import Settings from '../views/users/Settings.vue';
 import QuestionDetail from '../views/questions/QuestionDetail.vue';
+import GroupDetail from '../views/groups/GroupDetail.vue';
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,7 @@ export default new VueRouter({
     { path: '/groups', component: GroupList },
     { path: '/login', component: Login },
     { path: '/register', component: Register },
-    { path: '/q/:id', component: QuestionDetail, name: 'questionDetail' },
+    { path: '/q/:id', component: QuestionDetail, name: 'question' },
+    { path: '/groups/:id', component: GroupDetail, name: 'group' },
   ],
 });

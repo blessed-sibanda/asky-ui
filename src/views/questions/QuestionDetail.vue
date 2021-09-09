@@ -12,7 +12,7 @@
         <div class="card py-2 px-3 mb-2">
           <router-link
             class="fw-bold"
-            :to="{ name: 'questionDetail', params: { id: question.id } }"
+            :to="{ name: 'question', params: { id: question.id } }"
             >{{ question.title }}</router-link
           >
         </div>

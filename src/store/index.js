@@ -6,6 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     selectedQuestion: null,
+    selectedGroup: null,
     questions: [
       {
         id: 1,
@@ -57,6 +58,9 @@ export default new Vuex.Store({
   mutations: {
     setQuestion(state, id) {
       state.selectedQuestion = state.questions.find((q) => q.id == id);
+    },
+    setGroup(state, id) {
+      state.selectedGroup = state.groups.find((g) => g.id == id);
     },
   },
 });
